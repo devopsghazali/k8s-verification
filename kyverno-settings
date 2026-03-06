@@ -1,0 +1,14 @@
+helm install kyverno kyverno/kyverno \
+-n security-system \
+--create-namespace
+
+
+kubectl get pods -n security-system
+expected
+kyverno-admission-controller
+kyverno-background-controller
+kyverno-cleanup-controller
+kyverno-reports-controller
+
+
+kubectl get validatingwebhookconfigurations

@@ -1,0 +1,4 @@
+kubectl create namespace security-system
+kubectl create namespace observability
+kubectl create namespace gitops
+kubectl create namespace demo-app
